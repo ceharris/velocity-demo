@@ -1,0 +1,8 @@
+set interfaces ${intf.name} unit 1 description ${intf.description}
+set interfaces ${intf.name} unit 1 family inet address ${intf.ipv4Address}
+#if ($intf.ipv6Address)
+set interfaces ${intf.name} unit 1 family inet6 address ${intf.ipv6Address}
+#end
+set interfaces ${intf.name} unit 1 mtu ${intf.mtu}
+
+  
